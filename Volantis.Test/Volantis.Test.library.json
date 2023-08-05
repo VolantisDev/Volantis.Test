@@ -1,0 +1,10 @@
+{
+    "name": "Volantis.Test",
+    "type": "shared",
+    "description": "A test framework for AHK applications",
+    "developer": "Volantis Development",
+    "website": "https://volantis.dev",
+    "dependencies": [
+
+    ]
+}
