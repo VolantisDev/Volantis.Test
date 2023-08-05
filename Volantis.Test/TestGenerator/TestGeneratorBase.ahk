@@ -12,7 +12,7 @@ class TestGeneratorBase {
             throw FileSystemTestException("Class file " . classFile . " not found.")
         }
 
-        SplitPath(classFile,, classDir,, className)
+        SplitPath(classFile,, &classDir,, &className)
         testPath := classDir . "\" . className . ".test.ahk"
 
         if (FileExist(testPath)) {
@@ -31,6 +31,8 @@ class TestGeneratorBase {
         testMethods := []
 
         for propName in %className%.OwnProps() {
+            propDesc := %className%.GetOwnPropDesc(propName)
+
             if propDesc.HasProp('Call') {
                 testMethods.Push(propName)
             }
