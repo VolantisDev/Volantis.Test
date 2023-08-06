@@ -17,6 +17,11 @@
         }
     },
     "libraries": {
-        "Volantis.Test": "Volantis.Test"
+        "Volantis.Test": {
+            "path": "lib/Volantis.Test",
+            "uses": [
+                "Volantis.Core:Volantis.Core"
+            ]
+        }
     }
 }
