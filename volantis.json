@@ -1,0 +1,22 @@
+{
+    "name": "Volantis.Test",
+    "type": "package",
+    "description": "A test framework for AHK applications",
+    "developer": "Volantis Development",
+    "website": "https://volantis.dev",
+    "authors": [
+        {
+            "name": "Ben McClure",
+            "email": "ben@volantisdev.com"
+        }
+    ],
+    "dependencies": {
+        "Volantis.Core": {
+            "version": "^1.0",
+            "libraries": "*"
+        }
+    },
+    "libraries": {
+        "Volantis.Test": "Volantis.Test"
+    }
+}
